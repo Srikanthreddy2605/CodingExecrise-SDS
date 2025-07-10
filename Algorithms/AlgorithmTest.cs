@@ -40,15 +40,15 @@ namespace DeveloperSample.Algorithms
         [Fact]
         public void FormatSeparators_SingleItem_ReturnsWithAndPrefix()
         {                     
-            Assert.Equal(" and oneItem", Algorithms.FormatSeparators("oneItem"));
+            Assert.Equal(" and a", Algorithms.FormatSeparators("a"));
         }
 
         [Fact]
         public void FormatSeparators_TwoItems_ReturnsWithAndBetween()
         {
 
-            string result = Algorithms.FormatSeparators("Apple", "Banana");
-            Assert.Equal("Apple and Banana", result);
+            string result = Algorithms.FormatSeparators("x", "y");
+            Assert.Equal("x and y", result);
         }
 
     }
